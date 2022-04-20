@@ -1,0 +1,8 @@
+KTM;0
+Honda;1
+Husqvarna;2
+Kawasaki;3
+Gas Gas;4
+Yamaha;5
+Suzuki;6
+Beta;7

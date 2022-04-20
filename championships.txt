@@ -1,0 +1,3 @@
+AMA Supercross;1
+FIM World Motocross;2
+FIM European Motocross;3
