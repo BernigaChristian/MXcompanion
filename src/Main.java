@@ -83,17 +83,14 @@ public class Main {
         JMenuBar menuBar = new JMenuBar();
         JMenu menu = new JMenu("SELECT THE CHAMPIONSHIP");
         ArrayList<JMenuItem> menuItems = new ArrayList<>();
-        ActionListener switchMenu = new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String championship = ((JMenuItem)e.getSource()).getText();
-                int index = 0;
-                for(int i = 0; i < championships.size(); i++)
-                    if(championships.get(i).getName().equalsIgnoreCase(championship))   index =i;
-                for(int i = 0; i < championshipTabbedPanes.size(); i++){
-                    if(index == i)  championshipTabbedPanes.get(i).setVisible(true);
-                    else    championshipTabbedPanes.get(i).setVisible(false);
-                }
+        ActionListener switchMenu = e -> {
+            String championship = ((JMenuItem)e.getSource()).getText();
+            int index = 0;
+            for(int i = 0; i < championships.size(); i++)
+                if(championships.get(i).getName().equalsIgnoreCase(championship))   index =i;
+            for(int i = 0; i < championshipTabbedPanes.size(); i++){
+                if(index == i)  championshipTabbedPanes.get(i).setVisible(true);
+                else    championshipTabbedPanes.get(i).setVisible(false);
             }
         };
         for(Championship c : championships)

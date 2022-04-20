@@ -32,7 +32,7 @@ public class ListPane extends JPanel {
                 riders.add(r.getName());
             }
         ridersList = new JList(riders.toArray());
-        riderSpecs = new JTextArea();
+        riderSpecs = new JTextArea("\t");
 
         ridersList.addListSelectionListener(e -> {
             try{
@@ -53,10 +53,6 @@ public class ListPane extends JPanel {
         gbc.gridx = 3;
         gbc.gridy = 0;
         this.add(riderSpecs,gbc);
-    }
-
-    public int getChampionshipId() {
-        return championshipId;
     }
 
     public int getCategoryId() {

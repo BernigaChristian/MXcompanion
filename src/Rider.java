@@ -29,40 +29,12 @@ public class Rider {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getMotoId() {
-        return motoId;
-    }
-
-    public void setMotoId(int motoId) {
-        this.motoId = motoId;
-    }
-
-    public int getTeamId() {
-        return teamId;
-    }
-
-    public void setTeamId(int teamId) {
-        this.teamId = teamId;
-    }
-
     public int getChampionshipId() {
         return championshipId;
     }
 
-    public void setChampionshipId(int championshipId) {
-        this.championshipId = championshipId;
-    }
-
     public int getCategoryId() {
         return categoryId;
-    }
-
-    public void setCategoryId(int categoryId) {
-        this.categoryId = categoryId;
     }
 
     public String riderToString()    throws NotFoundException{
